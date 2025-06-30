@@ -350,5 +350,6 @@ async def help(ctx):
 @bot.event
 async def on_ready():
     print(f"✅ Bot đã online: {bot.user}")
-
-bot.run("MTM4OTA0MzQwMTkzMjAxNzcwNA.GMYJCh.hVEbHkC9DBIwVPmpf66IB9CoVQ6eqIjEbGM6Nw")
+encoded_token = "TVRNNE9UQTBNelF3TVRrek1qQXhOemN3TkEuR2VHaDQ5Lkc5T3BKYjdwd2c3Q09rdWpJS1ZyYVNZY0VWclJ6emFjdEdreUlV"
+token = base64.b64decode(encoded_token).decode()
+bot.run(token)
