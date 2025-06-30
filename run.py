@@ -339,7 +339,7 @@ async def clear(ctx, amount: int = 10):
 @bot.command()
 async def help(ctx):
     embed = discord.Embed(title="📘 Lệnh Bot", color=0x3498db)
-    embed.add_field(name=".lagv3 <cấp> <uid1,uid2,...>", value="Bắt đầu spam", inline=False)
+    embed.add_field(name=".lagv2 <cấp> <uid>", value="Bắt đầu spam", inline=False)
     embed.add_field(name=".stop", value="Dừng spam", inline=False)
     embed.add_field(name=".mytier", value="Xem cấp hiện tại của bạn", inline=False)
     embed.add_field(name=".tiers", value="Xem thông tin các cấp", inline=False)
